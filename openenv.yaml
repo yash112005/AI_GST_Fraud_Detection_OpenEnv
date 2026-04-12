@@ -1,0 +1,56 @@
+name: gst-fraud-env
+version: 0.1.0
+
+entrypoint: server.app:main
+
+dependencies:
+  - openenv-core>=0.2.0
+  - flask
+  - flask-cors
+  - pandas
+  - numpy
+  - scikit-learn
+  - pydantic
+  - requests
+
+endpoints:
+  reset: /reset
+  step: /step
+  grade: /grade
+  state: /state
+  tasks: /tasks
+
+observation:
+  type: object
+
+action:
+  type: float
+
+reward:
+  type: float
+
+score:
+  type: float
+  min: 0.01
+  max: 0.99
+
+max_steps: 10
+
+tasks:
+  - id: low_risk_business_detection
+    name: "Low Risk Business Detection"
+    difficulty: easy
+    passing_score: 0.5
+    file: tasks/low_risk_business.yaml
+
+  - id: medium_risk_business_detection
+    name: "Medium Risk Business Detection"
+    difficulty: medium
+    passing_score: 0.6
+    file: tasks/medium_risk_business.yaml
+
+  - id: high_risk_business_detection
+    name: "High Risk Business Detection"
+    difficulty: hard
+    passing_score: 0.7
+    file: tasks/high_risk_business.yaml

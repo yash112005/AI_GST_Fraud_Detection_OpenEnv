@@ -1,0 +1,18 @@
+name: medium_risk_business_detection
+
+input:
+  id: "B3"
+  name: "Business_3"
+  gstNo: "07LMNOP4321K1Z3"
+  city: "Bangalore"
+  riskScore: 0.5
+  riskLevel: "Medium"
+
+expected_output:
+  action: 0.6
+
+grader:
+  type: score
+  field: score
+  min_score: 0.01
+  max_score: 0.99

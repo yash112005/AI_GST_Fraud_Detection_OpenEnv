@@ -1,0 +1,23 @@
+[project]
+name = "gst-fraud-env"
+version = "0.1.0"
+description = "AI GST Fraud Detection OpenEnv Environment"
+authors = [
+    { name="Yash",email="ynamdeo248@gmail.com" }
+]
+dependencies = [
+    "flask",
+    "pandas",
+    "scikit-learn",
+    "pydantic",
+    "requests",
+    "openai",
+    "python-dotenv",
+    "openenv-core>=0.2.0"
+]
+
+[project.scripts]
+server = "server.app:app"
+
+[tool.openenv]
+entry_point = "app.py"

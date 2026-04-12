@@ -1,0 +1,16 @@
+id,name,gstNo,city,riskScore,riskLevel
+B1,Business_1,29ABCDE1234F1Z5,Delhi,0.2,Low
+B2,Business_2,27PQRSX5678L1Z2,Mumbai,0.7,High
+B3,Business_3,07LMNOP4321K1Z3,Bangalore,0.5,Medium
+B4,Business_4,24ABCDE6789Q1Z4,Ahmedabad,0.1,Low
+B5,Business_5,33WERTY1122R1Z6,Chennai,0.8,High
+B6,Business_6,19ZXCVB3344T1Z7,Kolkata,0.4,Medium
+B7,Business_7,36ASDFG5566U1Z8,Hyderabad,0.3,Low
+B8,Business_8,06QWERT7788I1Z9,Gurgaon,0.6,Medium
+B9,Business_9,23LKJHG9900O1Z1,Pune,0.9,High
+B10,Business_10,08MNBVC2233P1Z2,Jaipur,0.2,Low
+B11,Business_11,09POIUY4455A1Z3,Lucknow,0.5,Medium
+B12,Business_12,10TREWQ6677S1Z4,Kanpur,0.7,High
+B13,Business_13,11ZXCAS8899D1Z5,Nagpur,0.4,Medium
+B14,Business_14,12QAZWS1122F1Z6,Indore,0.6,Medium
+B15,Business_15,13EDCRF3344G1Z7,Bhopal,0.8,High

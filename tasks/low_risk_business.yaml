@@ -1,0 +1,18 @@
+name: low_risk_business_detection
+
+input:
+  id: "B4"
+  name: "Business_4"
+  gstNo: "24ABCDE6789Q1Z4"
+  city: "Ahmedabad"
+  riskScore: 0.1
+  riskLevel: "Low"
+
+expected_output:
+  action: 0.2
+
+grader:
+  type: score
+  field: score
+  min_score: 0.01
+  max_score: 0.99
