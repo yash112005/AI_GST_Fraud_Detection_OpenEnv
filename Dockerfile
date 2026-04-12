@@ -1,6 +1,6 @@
 FROM python:3.12-slim
 
-WORKDIR /app
+WORKDIR /server
 
 # Copy all project files
 COPY . .
@@ -13,4 +13,4 @@ RUN pip install --upgrade pip && \
 EXPOSE 7860
 
 # Run the server via the app entry point
-CMD ["python", "-c", "from server.app import main; main()"]
+CMD ["python", "-c", "server.app"]
