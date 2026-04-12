@@ -13,4 +13,4 @@ RUN pip install --upgrade pip && \
 EXPOSE 7860
 
 # Run the server via the app entry point
-CMD ["python", "-c", "server.app","main()"]
+CMD ["python", "-c", "server.app"]
